@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body .didYouKnow input::-moz-placeholder, body .greenCheck input::-moz-placeholder, body footer .bottom .newsletter input::-moz-placeholder {
+  font-family: "Ubuntu Mono", monospace;
+}
+body, body header, body .didYouKnow input::placeholder, body .didYouKnow button, body .greenCheck input::placeholder, body .greenCheck button, body footer .bottom .newsletter input::placeholder {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+  margin: auto;
+}
+body header {
+  background-color: #A5DD9B;
+  display: flex;
+  flex-direction: row;
+  color: #006769;
+  font-size: 4vw;
+  padding: 8vw 4vw;
+}
+body header a {
+  text-decoration: none;
+  color: #006769;
+  font-weight: 500;
+  margin: 0 1vw;
+}
+body header p {
+  margin: 0;
+}
+body .heroSection {
+  background-color: #40A578;
+  padding: 15vw 0;
+  padding-bottom: 25vw;
+  position: relative;
+}
+body .heroSection .heroBubbleOne {
+  color: #E6FF94;
+  border: 4px solid #E6FF94;
+  height: 80vw;
+  width: 80vw;
+  border-radius: 900px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+body .heroSection .heroBubbleOne h2 {
+  margin: 0;
+  width: 40vw;
+  position: absolute;
+  font-size: 9vw;
+  font-weight: 400;
+  top: 20%;
+  left: 20%;
+}
+body .heroSection .heroBubbleTwo {
+  color: #E6FF94;
+  border: 4px solid #E6FF94;
+  border-radius: 90px;
+  width: 30vw;
+  height: 30vw;
+  background-color: #40A578;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+body .heroSection .heroBubbleTwo h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3.5vw;
+  width: 30vw;
+  position: absolute;
+  top: 25%;
+}
+body .heroSection .calculateCircle {
+  background-color: #A5DD9B;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 900px;
+  border: 8px #40A578 solid;
+  position: absolute;
+  bottom: -7.5%;
+  left: 5%;
+  z-index: 9999;
+}
+body .heroSection .calculateCircle p {
+  font-size: 3vw;
+  color: #006769;
+  position: absolute;
+  top: 25%;
+  right: 7.5%;
+}
+body .didYouKnow {
+  background-color: #A5DD9B;
+  padding: 10vw 0;
+  position: relative;
+  padding-bottom: 17vw;
+}
+body .didYouKnow h2 {
+  text-align: center;
+  margin: 0;
+  color: #40A578;
+  font-size: 6vw;
+  font-weight: 400;
+}
+body .didYouKnow h3 {
+  text-align: center;
+  color: #006769;
+  font-size: 5.5vw;
+  padding: 0 2vw;
+  font-weight: 400;
+}
+body .didYouKnow h4 {
+  text-align: center;
+  color: #006769;
+  font-size: 2.9vw;
+  padding: 0 2vw;
+}
+body .didYouKnow input {
+  background-color: #40A578;
+  border: none;
+  padding: 1vw 15vw;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 10vw;
+}
+body .didYouKnow input::-moz-placeholder {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 4vw;
+}
+body .didYouKnow input::placeholder {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 4vw;
+}
+body .didYouKnow button {
+  display: block;
+  margin: auto;
+  border: none;
+  color: #FFFFFF;
+  background-color: #40A578;
+  padding: 1vw 8vw;
+  border-radius: 20px;
+  font-size: 3vw;
+  margin-top: 4vw;
+}
+body .didYouKnow div {
+  background-color: #40A578;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 900px;
+  border: 8px #A5DD9B solid;
+  position: absolute;
+  bottom: -10%;
+  left: 5%;
+  z-index: 9999;
+}
+body .didYouKnow div p {
+  font-size: 3vw;
+  color: #A5DD9B;
+  position: absolute;
+  width: 10vw;
+  top: 12%;
+  right: 10%;
+}
+body .greenCheck {
+  background-color: #40A578;
+  text-align: center;
+  padding: 18vw 0;
+  position: relative;
+}
+body .greenCheck h3 {
+  color: #E6FF94;
+  font-weight: 400;
+  width: 80vw;
+  display: block;
+  margin: auto;
+}
+body .greenCheck h4 {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 3vw;
+  width: 75vw;
+  display: block;
+  margin: auto;
+  margin-top: 8vw;
+}
+body .greenCheck input {
+  background-color: #A5DD9B;
+  border: none;
+  padding: 1vw 15vw;
+  border-radius: 20px;
+  margin-top: 15vw;
+}
+body .greenCheck input::-moz-placeholder {
+  text-align: center;
+  color: #006769;
+  font-size: 4vw;
+}
+body .greenCheck input::placeholder {
+  text-align: center;
+  color: #006769;
+  font-size: 4vw;
+}
+body .greenCheck button {
+  border: none;
+  background-color: #A5DD9B;
+  color: #006769;
+  padding: 1vw 8vw;
+  border-radius: 20px;
+  margin-top: 10vw;
+  font-size: 3vw;
+}
+body .greenCheck div {
+  background-color: #A5DD9B;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 900px;
+  border: 8px #40A578 solid;
+  position: absolute;
+  bottom: -9%;
+  left: 5%;
+  z-index: 9999;
+}
+body .greenCheck div p {
+  font-size: 3vw;
+  color: #006769;
+  position: absolute;
+  top: 22%;
+  right: 4%;
+}
+body .resources {
+  background-color: #A5DD9B;
+  padding: 20vw 0;
+  padding-left: 13vw;
+  padding-right: 7vw;
+  color: #006769;
+  position: relative;
+}
+body .resources h2 {
+  margin: 0;
+  font-weight: 400;
+}
+body .resources h4 {
+  font-weight: 400;
+  font-size: 3.5vw;
+}
+body .resources ul {
+  margin-left: -6vw;
+  margin-top: 10vw;
+}
+body .resources ul li {
+  padding: 1vw 0;
+}
+body .resources ul li a {
+  color: #006769;
+}
+body .resources .smallCircle {
+  background-color: #40A578;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 900px;
+  border: 8px #A5DD9B solid;
+  position: absolute;
+  bottom: -9%;
+  left: 5%;
+  z-index: 9999;
+}
+body .resources .smallCircle p {
+  font-size: 3vw;
+  color: #A5DD9B;
+  position: absolute;
+  top: 12%;
+  right: 4%;
+  text-align: center;
+}
+body footer {
+  background-color: #40A578;
+  padding: 10vw 8vw;
+}
+body footer h2 {
+  color: #E6FF94;
+  font-weight: 400;
+}
+body footer p {
+  color: #FFFFFF;
+  font-size: 3.8vw;
+}
+body footer .bottom {
+  margin-top: 30vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+  margin-bottom: -10vw;
+}
+body footer .bottom p {
+  margin-top: 0;
+  font-size: 3.5;
+}
+body footer .bottom .desktopFooter {
+  display: none;
+}
+body footer .bottom .newsletter p {
+  font-size: 3vw;
+  margin-top: -2vw;
+}
+body footer .bottom .newsletter input {
+  background-color: #E6FF94;
+  border: none;
+  border-radius: 20px;
+  padding-left: 2vw;
+  width: 30vw;
+  margin-left: 1vw;
+}
+body footer .bottom .newsletter input::-moz-placeholder {
+  font-size: 3vw;
+  color: #40A578;
+  font-weight: 700;
+}
+body footer .bottom .newsletter input::placeholder {
+  font-size: 3vw;
+  color: #40A578;
+  font-weight: 700;
+}
+body footer .bottom .newsletter button {
+  background-color: #40A578;
+  border: 2px solid #E6FF94;
+  border-radius: 20px;
+  color: #E6FF94;
+}

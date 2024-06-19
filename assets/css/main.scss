@@ -1,0 +1,363 @@
+@use "./helpers/placeholders";
+@use "./helpers/variables" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  margin: auto;
+  @extend %ubuntu;
+
+  header {
+    background-color: $lightGreen;
+    display: flex;
+    flex-direction: row;
+    @extend %ubuntu;
+    color: $teal;
+    font-size: 4vw;
+    padding: 8vw 4vw;
+    a {
+      text-decoration: none;
+      color: $teal;
+      font-weight: 500;
+      margin: 0 1vw;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .heroSection {
+    background-color: $green;
+    padding: 15vw 0;
+    padding-bottom: 25vw;
+    position: relative;
+
+    .heroBubbleOne {
+      color: $yellow;
+      border: 4px solid $yellow;
+      height: 80vw;
+      width: 80vw;
+      border-radius: 900px;
+      display: block;
+      margin: auto;
+      position: relative;
+      h2 {
+        margin: 0;
+        width: 40vw;
+        position: absolute;
+        font-size: 9vw;
+        font-weight: 400;
+        top: 20%;
+        left: 20%;
+      }
+    }
+
+    .heroBubbleTwo {
+      color: $yellow;
+      border: 4px solid $yellow;
+      border-radius: 90px;
+      width: 30vw;
+      height: 30vw;
+      background-color: $green;
+      position: absolute;
+      right: 10%;
+      bottom: 10%;
+
+      h4 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 3.5vw;
+        width: 30vw;
+        position: absolute;
+        top: 25%;
+      }
+    }
+    .calculateCircle {
+      background-color: $lightGreen;
+      width: 15vw;
+      height: 15vw;
+      border-radius: 900px;
+      border: 8px $green solid;
+      position: absolute;
+      bottom: -7.5%;
+      left: 5%;
+      z-index: 9999;
+
+      p {
+        font-size: 3vw;
+        color: $teal;
+        position: absolute;
+        top: 25%;
+        right: 7.5%;
+      }
+    }
+  }
+
+  .didYouKnow {
+    background-color: $lightGreen;
+    padding: 10vw 0;
+    position: relative;
+    padding-bottom: 17vw;
+
+    h2 {
+      text-align: center;
+      margin: 0;
+      color: $green;
+      font-size: 6vw;
+      font-weight: 400;
+    }
+
+    h3 {
+      text-align: center;
+      color: $teal;
+      font-size: 5.5vw;
+      padding: 0 2vw;
+      font-weight: 400;
+    }
+
+    h4 {
+      text-align: center;
+      color: $teal;
+      font-size: 2.9vw;
+      padding: 0 2vw;
+    }
+
+    input {
+      background-color: $green;
+      border: none;
+      padding: 1vw 15vw;
+      display: block;
+      margin: auto;
+      border-radius: 20px;
+      margin-top: 10vw;
+
+      &::placeholder {
+        color: $white;
+        @extend %ubuntu;
+        text-align: center;
+        font-size: 4vw;
+      }
+    }
+
+    button {
+      display: block;
+      margin: auto;
+      border: none;
+      color: $white;
+      background-color: $green;
+      padding: 1vw 8vw;
+      border-radius: 20px;
+      font-size: 3vw;
+      margin-top: 4vw;
+      @extend %ubuntu;
+    }
+
+    div {
+      background-color: $green;
+      width: 15vw;
+      height: 15vw;
+      border-radius: 900px;
+      border: 8px $lightGreen solid;
+      position: absolute;
+      bottom: -10%;
+      left: 5%;
+      z-index: 9999;
+
+      p {
+        font-size: 3vw;
+        color: $lightGreen;
+        position: absolute;
+        width: 10vw;
+        top: 12%;
+        right: 10%;
+      }
+    }
+  }
+
+  .greenCheck {
+    background-color: $green;
+    text-align: center;
+    padding: 18vw 0;
+    position: relative;
+
+    h3 {
+      color: $yellow;
+      font-weight: 400;
+      width: 80vw;
+      display: block;
+      margin: auto;
+    }
+
+    h4 {
+      color: $white;
+      font-weight: 400;
+      font-size: 3vw;
+      width: 75vw;
+      display: block;
+      margin: auto;
+      margin-top: 8vw;
+    }
+
+    input {
+      background-color: $lightGreen;
+      border: none;
+      padding: 1vw 15vw;
+      border-radius: 20px;
+      margin-top: 15vw;
+
+      &::placeholder {
+        text-align: center;
+        @extend %ubuntu;
+        color: $teal;
+        font-size: 4vw;
+      }
+    }
+
+    button {
+      @extend %ubuntu;
+      border: none;
+      background-color: $lightGreen;
+      color: $teal;
+      padding: 1vw 8vw;
+      border-radius: 20px;
+      margin-top: 10vw;
+      font-size: 3vw;
+    }
+
+    div {
+      background-color: $lightGreen;
+      width: 15vw;
+      height: 15vw;
+      border-radius: 900px;
+      border: 8px $green solid;
+      position: absolute;
+      bottom: -9%;
+      left: 5%;
+      z-index: 9999;
+
+      p {
+        font-size: 3vw;
+        color: $teal;
+        position: absolute;
+        top: 22%;
+        right: 4%;
+      }
+    }
+  }
+
+  .resources {
+    background-color: $lightGreen;
+    padding: 20vw 0;
+    padding-left: 13vw;
+    padding-right: 7vw;
+    color: $teal;
+    position: relative;
+
+    h2 {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 3.5vw;
+    }
+
+    ul {
+      margin-left: -6vw;
+      margin-top: 10vw;
+      li {
+        padding: 1vw 0;
+
+        a {
+          color: $teal;
+        }
+      }
+    }
+
+    .smallCircle {
+      background-color: $green;
+      width: 15vw;
+      height: 15vw;
+      border-radius: 900px;
+      border: 8px $lightGreen solid;
+      position: absolute;
+      bottom: -9%;
+      left: 5%;
+      z-index: 9999;
+
+      p {
+        font-size: 3vw;
+        color: $lightGreen;
+        position: absolute;
+        top: 12%;
+        right: 4%;
+        text-align: center;
+      }
+    }
+  }
+
+  footer {
+    background-color: $green;
+    padding: 10vw 8vw;
+
+    h2 {
+      color: $yellow;
+      font-weight: 400;
+    }
+
+    p {
+      color: $white;
+      font-size: 3.8vw;
+    }
+
+    .bottom {
+        margin-top: 30vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+        margin-bottom: -10vw;
+
+        p{
+
+            margin-top: 0;
+            font-size: 3.5;
+        }
+
+      .desktopFooter {
+        display: none;
+      }
+
+      .newsletter {
+        p{
+            font-size: 3vw;
+            margin-top: -2vw;
+        }
+
+        input{
+            background-color: $yellow;
+            border: none;
+            border-radius: 20px;
+            padding-left: 2vw;
+            width: 30vw;
+            margin-left: 1vw;
+
+            &::placeholder{
+              font-size: 3vw;  
+              @extend %ubuntu;
+              color: $green;
+              font-weight: 700;
+            }
+        }
+
+        button{
+            background-color: $green;
+            border: 2px solid $yellow;
+            border-radius: 20px;
+            color: $yellow;
+        }
+      }
+    }
+  }
+}
