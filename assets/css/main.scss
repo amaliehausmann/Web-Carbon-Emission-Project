@@ -3,9 +3,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: auto;
   @extend %ubuntu;
+  overflow-x: hidden;
 
   header {
     background-color: $lightGreen;
@@ -15,6 +20,7 @@ body {
     color: $teal;
     font-size: 4vw;
     padding: 8vw 4vw;
+
     a {
       text-decoration: none;
       color: $teal;
@@ -24,6 +30,33 @@ body {
 
     p {
       margin: 0;
+    }
+
+    @media (min-width: 750px){
+      justify-content: center;
+      padding: 4vw 4vw;
+
+      a{
+        font-size: 3vw;
+        margin: 0 3vw;
+      }
+
+      p{
+        font-size: 3vw;
+      }
+    }
+
+    @media (min-width: 1100px){
+      padding: 2vw 10vw;
+
+      a{
+        font-size: 1.5vw;
+        margin: 0 1vw;
+      }
+
+      p{
+        font-size: 1.5vw;
+      }
     }
   }
 
@@ -42,6 +75,7 @@ body {
       display: block;
       margin: auto;
       position: relative;
+
       h2 {
         margin: 0;
         width: 40vw;
@@ -56,7 +90,7 @@ body {
     .heroBubbleTwo {
       color: $yellow;
       border: 4px solid $yellow;
-      border-radius: 90px;
+      border-radius: 999px;
       width: 30vw;
       height: 30vw;
       background-color: $green;
@@ -73,6 +107,7 @@ body {
         top: 25%;
       }
     }
+
     .calculateCircle {
       background-color: $lightGreen;
       width: 15vw;
@@ -92,6 +127,82 @@ body {
         right: 7.5%;
       }
     }
+
+    @media (min-width: 750px){
+      padding: 10vw 0;
+
+      .heroBubbleOne{
+        height: 60vw;
+        width: 60vw;
+
+        h2{
+          left: 12%;
+          font-size: 8vw;
+          width: 30vw;
+        }
+      }
+
+      .heroBubbleTwo{
+        height: 25vw;
+        width: 25vw;
+
+        h4{
+          font-size: 3vw;
+          width: 20vw;
+          left: 10%;
+        }
+      }
+
+      .calculateCircle{
+        bottom: -10%;
+        p{
+          font-size: 2.5vw;
+          top: 28%;
+          left: 13%;
+        }
+      }
+    }
+
+    @media (min-width: 1100px){
+
+      .heroBubbleOne{
+        height: 50vw;
+        width: 50vw;
+
+        h2{
+          left: -20%;
+          top: -5%;
+        }
+      }
+
+      .heroBubbleTwo{
+        height: 20vw;
+        width: 20vw;
+        right: 18%;
+        bottom: 15%;
+
+        h4{
+          font-size: 1.8vw;
+          width: 15vw;
+          top: 33%;
+          left: 14%;
+        }
+      }
+
+      .calculateCircle{
+        width: 16vw;
+        height: 16vw;
+        bottom: -11%;
+
+        p{
+          font-size: 2vw;
+          left: 20%;   
+          top: 33%;
+        }
+      }
+
+
+    }
   }
 
   .didYouKnow {
@@ -99,6 +210,7 @@ body {
     padding: 10vw 0;
     position: relative;
     padding-bottom: 17vw;
+    scroll-margin-top: 100px;
 
     h2 {
       text-align: center;
@@ -173,6 +285,104 @@ body {
         right: 10%;
       }
     }
+
+    @media (min-width: 750px){
+
+      padding-bottom: 10vw;
+      h2{
+        font-size: 5vw;
+      }
+
+      h3{
+        font-size: 4vw;
+        width: 70vw;
+        display: block;
+        margin: auto;
+        margin-top: 5vw;
+      }
+
+      h4{
+        font-size: 2.5vw;
+        width: 70vw;
+        display: block;
+        margin: auto;
+        margin-top: 7vw;
+        font-weight: 400;
+      }
+
+      input{
+        margin-top: 10vw;
+        width: 30vw;
+        padding: 2vw 15vw;
+        &::placeholder{
+          font-size: 3vw;
+        }
+      }
+
+      button{
+        font-size: 2.5vw;
+      }
+    }
+
+    div{
+      left: 7%;
+
+      p{
+        font-size: 2.5vw;
+        top: 21%;
+        left: 28%;
+      }
+    }
+
+    @media (min-width: 1100px){
+      padding: 20vw 0;
+      padding-bottom: 25vw;
+
+      h2{
+        font-size: 4vw;
+      }
+
+      h3{
+        font-size: 3.5vw;
+        width: 55vw;
+        margin-top: 5vw;
+      }
+
+      h4{
+        font-size: 2vw;
+        margin-top: 4vw;
+      }
+
+      input{
+        margin-top: 8vw;
+        padding: 2vw 35vw 2vw 4vw;
+        border-radius: 50px;
+
+        &::placeholder{
+          font-size: 1.8vw;
+          text-align: left;
+        }
+      }
+
+      button{
+        font-size: 2vw;
+        border-radius: 50px;
+        margin-top: 3vw;
+      }
+
+      div{
+        width: 16vw;
+        height: 16vw;
+        bottom: -9%;
+
+        p{
+          font-size: 2vw;
+          left: 15%;   
+          top: 33%;
+          width: 30vw;
+        }
+      }
+    }
   }
 
   .greenCheck {
@@ -180,6 +390,7 @@ body {
     text-align: center;
     padding: 18vw 0;
     position: relative;
+    scroll-margin-top: 100px;
 
     h3 {
       color: $yellow;
@@ -244,6 +455,90 @@ body {
         right: 4%;
       }
     }
+
+    @media (min-width: 750px){
+
+      padding: 12vw 0;
+
+      h3{
+        font-size: 4vw;
+      }
+      h4{
+        font-size: 3vw;
+        color: $yellow;
+        margin-top: 5vw;
+      }
+
+      input{
+        width: 30vw;
+        margin-top: 10vw;
+        padding: 2vw 15vw;
+        &::placeholder{
+          font-size: 3vw;
+        }
+      }
+
+      button{
+        font-size: 2.5vw;
+        margin-top: 6vw;
+      }
+
+      div{
+        left: 7.5%;
+        bottom: -11%;
+
+        p{
+          font-size: 2.5vw;
+          left: 8%;
+          top: 30%;
+        }
+      }
+    }
+
+    @media (min-width: 1100px){
+      padding: 20vw 0;
+      padding-bottom: 30vw;
+
+      h3{
+        font-size: 3vw;
+        width: 60vw;
+      }
+
+      h4{
+        font-size: 2vw;
+        width: 75vw;
+      }
+
+      input{
+        margin-top: 8vw;
+        padding: 2vw 35vw 2vw 4vw;
+        border-radius: 50px;
+
+        &::placeholder{
+          font-size: 1.8vw;
+          text-align: left;
+        }
+      }
+
+      button{
+        font-size: 2vw;
+        border-radius: 50px;
+        margin-top: 4vw;
+      }
+
+      div{
+        width: 16vw;
+        height: 16vw;
+        bottom: -9%;
+
+
+        p{
+          font-size: 2vw;
+          left: 7%;
+          top: 35%;
+        }
+      }
+    }
   }
 
   .resources {
@@ -253,6 +548,7 @@ body {
     padding-right: 7vw;
     color: $teal;
     position: relative;
+    scroll-margin-top: 100px;
 
     h2 {
       margin: 0;
@@ -267,6 +563,7 @@ body {
     ul {
       margin-left: -6vw;
       margin-top: 10vw;
+
       li {
         padding: 1vw 0;
 
@@ -296,11 +593,97 @@ body {
         text-align: center;
       }
     }
+
+    @media (min-width: 750px){
+      padding: 12vw 0;
+      padding-left: 13vw;
+      padding-right: 7vw;
+      h2{
+        font-size: 5vw;
+      }
+      h4{
+        font-size: 3vw;
+      }
+
+      ul{
+        margin-left: -2vw;
+        li{
+          padding: 2vw 0;
+          font-size: 3vw;
+        }
+      }
+
+      .smallCircle{
+        left: 8.5%;
+        bottom: -11%;
+        p{
+          font-size: 2.5vw;
+          top: 26%;
+        }
+      }
+    }
+
+    @media (min-width: 1100px){
+      padding: 15vw 15vw;
+
+      h2{
+        font-size: 5vw;
+      }
+
+      h4{
+        font-size: 1.5vw;
+        width: 33vw;
+        margin-top: 7vw;
+      }
+
+      .decoCircleOne{
+        width: 70vw;
+        height: 70vw;
+        border: 4px solid $teal;
+        border-radius: 999px;
+        position: absolute;
+        z-index: 1;
+        right: -25%;
+        top: 17%;
+        overflow-x: hidden;
+      }
+
+      ul{
+        margin-top: 1vw;
+
+        li{
+          font-size: 1.5vw;
+          padding: 0.8vw 0;
+        }
+      }
+
+      .smallCircle{
+          width: 16vw;
+          height: 16vw;
+          bottom: -13%;
+  
+  
+          p{
+            font-size: 2vw;
+            left: 5%;
+            top: 35%;
+          }
+      }
+
+    }
   }
 
   footer {
     background-color: $green;
     padding: 10vw 8vw;
+    padding-bottom: 15vw;
+    scroll-margin-top: 100px;
+    position: relative;
+    z-index: 100;
+
+    .space{
+      margin-bottom: 15vw;
+    }
 
     h2 {
       color: $yellow;
@@ -313,49 +696,270 @@ body {
     }
 
     .bottom {
-        margin-top: 30vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5vw;
-        margin-bottom: -10vw;
+      margin-top: 30vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5vw;
+      margin-bottom: -10vw;
 
-        p{
+      p {
 
-            margin-top: 0;
-            font-size: 3.5;
-        }
+        margin-top: 0;
+        font-size: 3.5;
+      }
 
       .desktopFooter {
         display: none;
       }
 
       .newsletter {
-        p{
-            font-size: 3vw;
-            margin-top: -2vw;
+        p {
+          font-size: 3vw;
+          margin-top: -2vw;
         }
 
-        input{
-            background-color: $yellow;
-            border: none;
-            border-radius: 20px;
-            padding-left: 2vw;
-            width: 30vw;
-            margin-left: 1vw;
+        input {
+          background-color: $yellow;
+          border: none;
+          border-radius: 20px;
+          padding-left: 2vw;
+          width: 30vw;
+
+          &::placeholder {
+            font-size: 3vw;
+            @extend %ubuntu;
+            color: $green;
+            font-weight: 700;
+          }
+        }
+
+        button {
+          background-color: $green;
+          border: 2px solid $yellow;
+          border-radius: 20px;
+          color: $yellow;
+          @extend %ubuntu;
+          margin-top: 3vw;
+          font-size: 3vw;
+
+        }
+      }
+
+      .footerBubbles {
+        position: relative;
+        .bigBubble {
+          width: 20vw;
+          height: 20vw;
+          border: solid $yellow 2px;
+          border-radius: 999px;
+          position: absolute;
+          bottom: 1%;
+          right: 5%;
+
+          h2{
+            position: absolute;
+            left: 10%;
+          }
+          h3{
+            position: absolute;
+            color: $white;
+            top: 35%;
+            right: 10%;
+            font-weight: 100;
+            font-size: 4vw;
+          }
+        }
+
+        .smallBubble{
+          width: 6vw;
+          height: 6vw;
+          background-color: $green;
+          border: 2px solid $yellow;
+          border-radius: 999px;
+          position: absolute;
+          bottom: -10%;
+          right: 9%;
+        }
+      }
+    }
+
+    @media (min-width: 750px){
+
+      padding: 10vw 12vw;
+
+      .space{
+        font-size: 6vw;
+        margin-bottom: 6vw;
+      }
+
+      p{
+        font-size: 3vw;
+      }
+
+      #mobileText{
+        display: none;
+      }
+
+      .bottom {
+        margin-top: 15vw;
+        padding-bottom: 5vw;
+        gap: 1vw;
+        .newsletter{
+          p{
+            font-size: 3vw;
+            margin-bottom: 2vw;
+          }
+
+          input{
+            padding: 1.5vw 1vw;
+            margin-top: 2vw;
+            &::placeholder{
+              font-size: 2.5vw;
+            }
+          }
+
+          button{
+            font-size: 2.5vw;
+            padding: 1vw 2vw;
+          }
+        }
+
+        .footerBubbles{
+          .bigBubble{
+            width: 25vw;
+            height: 25vw;
+
+            h2{
+              font-size: 7vw;
+            }
+
+            h3{
+              font-size: 5vw;
+              top: 25%;
+            }
+          }
+
+          .smallBubble{
+            width: 8vw;
+            height: 8vw;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1100px){
+
+      padding: 20vw 14vw 0 14vw;
+
+      .space{
+        font-size: 3.5vw;
+        margin-bottom: 4vw;
+      }
+
+      p{
+        font-size: 1.5vw;
+        width: 35vw;
+      }
+
+      .decoCircleTwo{
+        width: 40vw;
+        height: 40vw;
+        border: 4px solid $yellow;
+        border-radius: 999px;
+        position: absolute;
+        right: -10%;
+        top: 20%;
+      }
+
+      .decoCircleThree{
+        width: 15vw;
+        height: 15vw;
+        border: solid 4px $yellow;
+        border-radius: 999px;
+        position: absolute;
+        background-color: $green;
+        right: 20%;
+        top: 48%;
+      }
+
+      .bottom{
+        grid-template-columns: 15% 25% 30% 30%;
+        margin: 0 -9vw;
+        gap: 2vw;
+        margin-top: 30vw;
+
+        .desktopFooter{
+          display: flex;
+          flex-direction: column;
+          p{
+            font-size: 1.5vw;
+            width: 20vw;
+            margin: 0.2vw;
+
+            &:nth-child(1){
+              margin-bottom: 2vw;
+            }
+
+          }
+
+          .link{
+            margin-bottom: 2vw;
+          }
+        }
+
+        .newsletter{
+          p{
+            font-size: 1.5vw;
+            margin: 0.5vw;
+          }
+
+          input{
+            width: 80%;
+            margin-top: 1.5vw;
+            padding: 0.5vw;
 
             &::placeholder{
-              font-size: 3vw;  
-              @extend %ubuntu;
-              color: $green;
-              font-weight: 700;
+              font-size: 1.5vw;
             }
+          }
+
+          button{
+            font-size: 1.5vw;
+            padding: 0.5vw 2vw;
+            margin-top: 1.5vw;
+          }
         }
 
-        button{
-            background-color: $green;
-            border: 2px solid $yellow;
-            border-radius: 20px;
-            color: $yellow;
+        .footerBubbles{
+
+          .bigBubble{
+            width: 15vw;
+            height: 15vw;
+            left: 0%;
+            border-width: 4px;
+
+            h2{
+              font-size: 5vw;
+              left: 25%;
+              top: 20%;
+              margin: 0;
+            }
+
+            h3{
+              margin: 0;
+              font-size: 2vw;
+              top: 50%;
+              left: 25%;
+            }
+          }
+
+          .smallBubble{
+            width: 7vw;
+            height: 7vw;
+            right: 35%;
+            bottom: -10%;
+            border-width: 4px;
+          }
         }
       }
     }

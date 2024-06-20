@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Green Site</title>
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/app.js" defer type="module"></script>
 </head>
 <body>
     <header>
-        <a href="">CALCULATE</a>
+        <a href="#calculate">CALCULATE</a>
         <p>/</p>
-        <a href="">GREENCHECK</a>
+        <a href="#greencheck">GREENCHECK</a>
         <p>/</p>
-        <a href="">OUR MISSION</a>
+        <a href="#mission">OUR MISSION</a>
         <p>/</p>
-        <a href="">RESOURCES</a>
+        <a href="#resources">RESOURCES</a>
     </header>
 
     <main>
@@ -31,7 +31,7 @@
                 <p>CALCULATE</p>
             </div>
         </section>
-        <section class="didYouKnow">
+        <section class="didYouKnow" id="calculate">
             <h2>DID YOU KNOW</h2>
             <h3>The internet alone consumes 416.2Twh electricity per year</h3>
             <h4>To begin calculation how much CO2 your website uses enter the URL in the field below and hit calculate</h4>
@@ -41,7 +41,7 @@
                 <p>GREEN CHECK</p>
             </div>
         </section>
-        <section class="greenCheck">
+        <section class="greenCheck" id="greencheck">
             <h3>We love green energy and renewable energy sources. Does your provider?</h3>
             <h4>Enter a website URL in the field below to look check if the site providers use green and renewable energy sources for hosting</h4>
             <input type="text" id="greenCheck" placeholder="www.mywebsite.com"> <br>
@@ -50,7 +50,7 @@
                 <p>RESOURCES</p>
             </div>
         </section>
-        <section class="resources">
+        <section class="resources" id="resources">
             <h2>EVERY byte MATTERS</h2>
             <h4>We work towards a cleaner internet, free from as much carbon emission as possible. There are many things you can do as a web developer to help. Read more about how you can contribute here</h4>
                 <ul>
@@ -63,8 +63,8 @@
                 <p>THE MISSION</p>
             </div>
         </section>
-        <footer>
-            <h2>OUR Sacred MISSION</h2>
+        <footer id="mission">
+            <h2 class="space">OUR Sacred MISSION</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. </p>
             <p id="mobileText">Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh.</p>
             <div class="decoCircleTwo"></div>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="desktopFooter">
                     <p>Made possible by</p>
-                    <p>www.thegreenwebfoundation.org</p>
+                    <p class="link" >www.thegreenwebfoundation.org</p>
                     <p>Without their tools, publications and research none of this would be possible.</p>
                 </div>
                 <div class="newsletter">                
@@ -88,7 +88,7 @@
                     <input type="text" id="email" placeholder="Enter Your Email">
                     <button>Submit</button>
                 </div>
-                <div>
+                <div class="footerBubbles">
                     <div class="bigBubble">
                         <h2>WCE</h2>
                         <h3>project</h3>
