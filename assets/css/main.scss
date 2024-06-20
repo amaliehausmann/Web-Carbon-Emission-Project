@@ -16,12 +16,14 @@ body {
     background-color: $lightGreen;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     @extend %ubuntu;
     color: $teal;
     font-size: 4vw;
     padding: 8vw 4vw;
 
     a {
+      font-size: 3vw;
       text-decoration: none;
       color: $teal;
       font-weight: 500;
