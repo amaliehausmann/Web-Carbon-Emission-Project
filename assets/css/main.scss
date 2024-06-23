@@ -972,3 +972,37 @@ body {
     }
   }
 }
+
+
+.greenCheckBox{
+  display: none;
+  background-color: $green;
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  padding: 20vw 0;
+
+  h2{
+    color: $white;
+  }
+
+  p{
+    color: $white;
+  }
+
+}
+
+.co2CheckBox{
+  display: none;
+  text-align: center;
+  background-color: $lightGreen;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding-top: 15vw;
+  width: 100%;
+  p{
+    color: $green;
+  }
+
+}

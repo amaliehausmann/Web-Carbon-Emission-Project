@@ -863,3 +863,32 @@ body footer .bottom .footerBubbles .smallBubble {
     border-width: 4px;
   }
 }
+
+.greenCheckBox {
+  display: none;
+  background-color: #40A578;
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  padding: 20vw 0;
+}
+.greenCheckBox h2 {
+  color: #FFFFFF;
+}
+.greenCheckBox p {
+  color: #FFFFFF;
+}
+
+.co2CheckBox {
+  display: none;
+  text-align: center;
+  background-color: #A5DD9B;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding-top: 15vw;
+  width: 100%;
+}
+.co2CheckBox p {
+  color: #40A578;
+}
